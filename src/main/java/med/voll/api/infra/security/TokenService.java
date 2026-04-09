@@ -17,7 +17,7 @@ import med.voll.api.domain.usuario.Usuario;
 @Service
 public class TokenService {
 
-    @Value("{api.security.token.secret}")
+    @Value("${api.security.token.secret}")   
     private String secret;
     
     public String gerarToken(Usuario usuario) { 
